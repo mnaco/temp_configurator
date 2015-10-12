@@ -11,29 +11,31 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 }
 
-.bodyWrapper {
+.cfBodyWrapper {
 	* { @include box-sizing(border-box); }
 	font-size: 14px;
 
 }
 
-.contenWrapper {
-	width: 980px;
+.cfContentWrapper {
+	width: 812px;
 	margin: 0 auto;
 }
 
-.imgList {
+.cfImgList {
+
 	ul {
 		margin: 0;
 		padding: 0;
 		list-style: none;
 	}
+
 	li {
 		display: inline-block;
 		font-size: 0;
 		margin: 0 10px 20px;
-		height: 140px;
-		width: 140px;
+		height: auto;
+		width: auto;
 		border: 1px solid #ccc;
 		padding: 2px;
 		&.active { border-color: #900; }
@@ -62,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 				min-height: 26px;
 				text-align: center;
 				display: block;
-				background: rgba(255,0,0,0.5);
+				background: rgba(255,255,0,0.5);
 				font-size: 14px;
 				line-height: 1.3em;
 				color: #fff;
@@ -75,10 +77,20 @@ h1, h2, h3, h4, h5, h6 {
 			}
 		}
 	}
-	
+
+	&.sizeM li {
+		width: 180px;
+		height: 180px;
+	}
+	&.sizeL li {
+		width: 260px;
+		height: 260px;
+	}
 }
 
-.footerChoice {
+.cfAnnotate { font-size: 0.8em; }
+
+.cfSeletedOptions {
 	margin-top: 1em;
 	padding-top: 1em;
 	border-top: 1px solid $darkColor;
