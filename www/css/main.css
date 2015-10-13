@@ -394,6 +394,8 @@ th {
 }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -457,20 +459,151 @@ th {
   background: #eee;
 }
 */
+.tempStyle {
+  margin-bottom: 100px;
+  padding-bottom: 240px;
+  padding-top: 20px;
+  border-bottom: 1px dashed #900;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
 .cfBodyWrapper {
-  font-size: 14px;
+  font-size: 12px;
 }
 .cfBodyWrapper * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .cfContentWrapper {
   width: 812px;
   margin: 0 auto;
+}
+
+/* header */
+.cfPageHeader {
+  padding: 20px 0;
+}
+.cfPageHeader .logo img {
+  width: 300px;
+}
+.cfPageHeader ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cfPageHeader li {
+  display: inline-block;
+}
+.cfPageHeader a {
+  text-decoration: none;
+  color: #000;
+}
+.cfPageHeader a:hover {
+  color: #cb002b;
+}
+
+.cfHeaderMainMenu {
+  border-top: 1px solid #555;
+  margin-top: 10px;
+}
+.cfHeaderMainMenu li {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 0.5em 2em 0.5em 0;
+}
+
+.cfHeaderRightMenu {
+  float: right;
+  padding-top: 24px;
+  font-size: 0.9em;
+}
+.cfHeaderRightMenu li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  height: 16px;
+  padding: 0.3em 1em 0;
+  border-right: 1px solid #ccc;
+}
+.cfHeaderRightMenu li img {
+  position: relative;
+  top: -3px;
+  padding: 0 2px;
+}
+
+.cfHeaderImg {
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+  background-image: url("../img/header_bcgr.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+
+.cfButton {
+  font-size: 1.1em;
+  padding: 0.2em 1em;
+  border: 1px solid #ccc;
+  background: #eee;
+}
+
+.imgHolder {
+  border: 1px solid #ccc;
+  padding: 1px;
+}
+.imgHolder.sizeM {
+  width: 180px;
+  height: 180px;
+}
+.imgHolder.sizeL {
+  width: 260px;
+  height: 260px;
+}
+.imgHolder img {
+  width: 100%;
+  height: 100%;
+}
+
+.formHolder {
+  font-size: 1.2em;
+}
+
+.tblHolder {
+  margin-bottom: 20px;
+}
+.tblHolder h4 {
+  margin: 0.3em 0;
+}
+.tblHolder table td, .tblHolder table th {
+  padding: .3em 1em;
+}
+.tblHolder table td:first-child, .tblHolder table th:first-child {
+  padding-left: 0;
+}
+.tblHolder table td:lest-child, .tblHolder table th:lest-child {
+  padding-right: 0;
+}
+.tblHolder .selectable {
+  display: inline-block;
+  padding: 0.1em;
+}
+.tblHolder .selected {
+  background: #0bcc33;
+}
+
+.subTbl {
+  font-size: 0.9em;
+  background: #eee;
+  margin: 0 10px 10px;
+}
+.subTbl .selected {
+  background: #9affcc;
 }
 
 .cfImgList ul {
@@ -485,10 +618,13 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   width: auto;
   border: 1px solid #ccc;
-  padding: 2px;
+  padding: 1px;
 }
-.cfImgList li.active {
-  border-color: #900;
+.cfImgList li.selected {
+  border-color: #cb002b;
+}
+.cfImgList li.selected > a {
+  cursor: default;
 }
 .cfImgList li > a {
   position: relative;
@@ -499,10 +635,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cfImgList li > a:hover .itemTitle {
   max-height: 100px;
-  min-height: 28px;
+  min-height: 30px;
 }
 .cfImgList li > a .itemTitle {
-  transition: max-height 0.5s;
+  transition: max-height 0.3s, min-height 0.2s;
   position: absolute;
   z-index: 1;
   bottom: 0;
@@ -532,6 +668,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cfAnnotate {
+  display: inline-block;
+  padding: 0.5em 0;
   font-size: 0.8em;
 }
 
@@ -541,8 +679,33 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid #999;
 }
 
-/*
-@import "base/modules/header";
-@import "base/modules/footer";
-@import "base/modules/navigation";
-*/
+.blockFinalDimentions td, .blockFinalDimentions th {
+  border: 1px solid #eee;
+}
+
+.blockTotalPrice {
+  margin-top: 40px;
+  width: 60%;
+}
+.blockTotalPrice h2 {
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+.blockTotalPrice h2 span {
+  float: right;
+  text-decoration: none;
+}
+.blockTotalPrice .cfAnnotate {
+  text-align: right;
+}
+
+.blockProjectDetails {
+  margin: 40px 0 60px 0;
+}
+.blockProjectDetails input[type="text"] {
+  width: 60%;
+  font-size: 1.1em;
+  padding: .2em;
+  background: #eee;
+  border: 1px solid #ccc;
+}

@@ -7,11 +7,45 @@
 		<script src=""></script>
 	</head>
 	<body>
-	
+
+
 		<div class="cfBodyWrapper">
 
-<!-- SYSTEM -->
+
+
+<!-- HEADER -->
 			<div class="cfContentWrapper">
+				<div class="cfPageHeader">
+					<div class="cfHeaderRightMenu">
+						<ul>
+							<li class="">
+								<a href="" target="_blank"><img src="img/header-fb.png" alt="Facebook"></a>
+								<a href="" target="_blank"><img src="img/header-yt.png" alt="YouTube"></a>
+							</li>
+							<li><a href="" target="_blank">Kontakt</a></li>
+							<li><a href="" target="_blank">Newsletter</a></li>
+						</ul>
+					</div>
+					<div class="logo"><img src="img/logo.png" alt="Logo"></div>
+					<div class="cfHeaderMainMenu">
+						<ul>
+							<li><a href="" target="_blank">PRODUKTE</a></li>
+							<li><a href="" target="_blank">INSPIRATION</a></li>
+							<li><a href="" target="_blank">SCHMITZ</a></li>
+							<li><a href="" target="_blank">SERVICE</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- header img -->
+			<div class="cfHeaderImg"></div>
+
+<!-- END HEADER -->
+
+
+
+<!-- TEMPLATE 1 -->
+			<div class="cfContentWrapper tempStyle">
 				<h2>SYSTEM</h2>
 				<h4>WAHLEN SIE DAS PASSENDE SYSTEM</h4>
 				<div class="cfImgList sizeM">
@@ -22,7 +56,7 @@
 								<span class="itemTitle">Wandanbau</span>
 							</a>
 						</li>
-						<li>
+						<li class="selected">
 							<a href="">
 								<img class="itemImg" src="img/dummy_image.jpg" alt="Product Image">
 								<span class="itemTitle">Pendel</span>
@@ -56,16 +90,306 @@
 					<div class="cfAnnotate">Nicht alle Systeme können alle diese Varianten. Im nächsten Schritt werden Ihnen nur Systeme angeboten, die für Sie in Frage kommen.</div>
 				</div>
 
-
 				<div class="cfSeletedOptions">
 					<h4>IHRE AUSWAHL</h4>
-					<p>
-						Montageart:: Einbau Randlos <br>
-						System: STRONG1
-					</p>
+					<div class="tblHolder">
+						<table>
+							<tr><td>Montageart:</td><td>Einbau Randlos</td></tr>
+							<tr><td>System:</td><td>STRONG1</td></tr>
+							<tr><td>Gehäusefarbe:</td><td>Steingrau</td></tr>
+							<tr><td>Leuchtmittel:</td><td>LED</td></tr>
+							<tr><td>Lichtfarbe:</td><td>3000 K</td></tr>
+							<tr><td>Steuerung:</td><td>DIM DALI</td></tr>
+						</table>
+					</div>
 				</div>
 			</div>
-<!-- END SYSTEM -->
+<!-- END TEMPLATE 1 -->
+
+
+
+<!-- TEMPLATE 2 -->
+			<div class="cfContentWrapper tempStyle">
+				<h2>EINGABE MASSE</h2>
+				<h4>GEBEN SIE DIE GEWÜNSCHTEN MASSE EIN</h4>
+				<div class="grid">
+					<div class="col-2-3">
+						<div class="formHolder">
+							<p>A: <input type="text" name="sideA"> mm. </p>
+							<p>B: <input type="text" name="sideB"> mm. </p>
+							<p>C: <input type="text" name="sideC"> mm. </p>
+						</div>
+					</div>
+					<div class="col-1-3">
+						<div class="imgHolder sizeL">
+							<img class="size" src="img/3-Montage-U-Form.png" alt="Thumb 260">
+						</div>
+					</div>
+				</div>
+				<p>Bitte geben Sie die Maße für die jeweiligen Schenkel in Millimeter an, ohne Komma.</p>
+			</div>
+<!-- END TEMPLATE 2 -->
+
+
+
+<!-- TEMPLATE 3 -->
+			<div class="cfContentWrapper tempStyle">
+				<h2>AUSWAHL ERGEBNISSE</h2>
+				<div class="grid">
+					<div class="col-2-3">
+						<h4>WÄHLEN SIE IHREN FAVORITEN AUS</h4>
+						<div class="imgHolder sizeL">
+							<img class="size" src="img/3-Montage-U-Form.png" alt="Thumb 260">
+						</div>
+						<p>Bitte klicken Sie für die Auswahl und Detailinformationen auf die gewünschte Leuchte. (Statt bester Preis könnte auch das beste Gesamtmaß ausgezeichnet werden.)</p>
+						<p>&nbsp;</p>
+					</div>
+					<div class="col-1-3">
+						<h4>IHRE VORAUSWAHL</h4>
+						<div class="tblHolder">
+							<table>
+								<tr><td>Montageart:</td><td>Einbau Randlos</td></tr>
+								<tr><td>System:</td><td>STRONG1</td></tr>
+								<tr><td>Gehäusefarbe:</td><td>Steingrau</td></tr>
+								<tr><td>Leuchtmittel:</td><td>LED</td></tr>
+								<tr><td>Lichtfarbe:</td><td>3000 K</td></tr>
+								<tr><td>Steuerung:</td><td>DIM DALI</td></tr>
+								<tr><td>Bauform:</td><td>U-Form</td></tr>
+								<tr><td>Schenkel A:</td><td>4.250 mm</td></tr>
+								<tr><td>Schenkel B:</td><td>3.255 mm</td></tr>
+								<tr><td>Schenkel C:</td><td>4.220 mm</td></tr>
+							</table>
+						</div>
+					</div>
+				</div>
+							
+				<div class="tblHolder">
+					<h4>Schenkel A</h4>
+					<table>
+						<tr><td>Leuchte 35/49 W (1370 mm)</td><td><strong class="selectable">max Leerzone: 325 mm</strong></td></tr>
+						<tr><td>Leuchte 28/54 W (1070 mm)</td><td><strong class="selectable">max Leerzone: 295 mm</strong></td></tr>
+						<tr><td>Leuchte 21/39 W (770 mm)</td><td><strong class="selectable selected">max Leerzone: 221 mm</strong></td></tr>
+						<tr><td>Leuchte 14/24 W (495 mm)</td><td><strong class="selectable">max Leerzone: 255 mm</strong></td></tr>
+					</table>
+				</div>
+				
+				<div class="tblHolder">
+					<h4>Schenkel B</h4>
+					<table>
+						<tr><td>Leuchte 35/49 W (1370 mm)</td><td><strong class="selectable">max Leerzone: 325 mm</strong></td></tr>
+						<tr><td>Leuchte 28/54 W (1070 mm)</td><td><strong class="selectable">max Leerzone: 295 mm</strong></td></tr>
+						<tr><td>Leuchte 21/39 W (770 mm)</td><td><strong class="selectable">max Leerzone: 221 mm</strong></td></tr>
+						<tr><td>Leuchte 14/24 W (495 mm)</td><td><strong class="selectable selected">max Leerzone: 255 mm</strong></td></tr>
+					</table>
+				</div>
+
+				<div class="tblHolder">
+					<h4>Schenkel C</h4>
+					<table>
+						<tr><td>Leuchte 35/49 W (1370 mm)</td><td><strong class="selectable">max Leerzone: 325 mm</strong></td></tr>
+						<tr><td>Leuchte 28/54 W (1070 mm)</td><td><strong class="selectable selected">max Leerzone: 295 mm</strong></td></tr>
+						<tr><td>Leuchte 21/39 W (770 mm)</td><td><strong class="selectable">max Leerzone: 221 mm</strong></td></tr>
+						<tr><td>Leuchte 14/24 W (495 mm)</td><td><strong class="selectable">max Leerzone: 255 mm</strong></td></tr>
+					</table>
+				</div>
+					
+			</div>
+<!-- END TEMPLATE 3 -->
+
+
+
+
+<!-- TEMPLATE 4 -->
+	<div class="cfContentWrapper tempStyle">
+		<h2>AUSWAHL ERGEBNISSE</h2>
+		<div class="grid">
+			<div class="col-2-3">
+				<h4>WÄHLEN SIE IHREN FAVORITEN AUS</h4>
+				<div class="imgHolder sizeL">
+					<img class="size" src="img/3-Montage-U-Form.png" alt="Thumb 260">
+				</div>
+				<p>Bitte klicken Sie für die Auswahl und Detailinformationen auf die gewünschte Leuchte. (Statt bester Preis könnte auch das beste Gesamtmaß ausgezeichnet werden.)</p>
+				<p>&nbsp;</p>
+			</div>
+			<div class="col-1-3">
+				<h4>IHRE VORAUSWAHL</h4>
+				<div class="tblHolder">
+					<table>
+						<tr><td>Montageart:</td><td>Einbau Randlos</td></tr>
+						<tr><td>System:</td><td>STRONG1</td></tr>
+						<tr><td>Gehäusefarbe:</td><td>Steingrau</td></tr>
+						<tr><td>Leuchtmittel:</td><td>LED</td></tr>
+						<tr><td>Lichtfarbe:</td><td>3000 K</td></tr>
+						<tr><td>Steuerung:</td><td>DIM DALI</td></tr>
+						<tr><td>Bauform:</td><td>U-Form</td></tr>
+						<tr><td>Schenkel A:</td><td>4.250 mm</td></tr>
+						<tr><td>Schenkel B:</td><td>3.255 mm</td></tr>
+						<tr><td>Schenkel C:</td><td>4.220 mm</td></tr>
+					</table>
+				</div>
+				<div>
+					<button class="cfButton" type="button">Zurück</button>
+					<button class="cfButton" type="button">Weiter</button>
+				</div>
+			</div>
+		</div>
+					
+		<div class="tblHolder">
+			<h4>Schenkel A</h4>
+			<table>
+				<tr><td>Leuchte 35/49 W (1370 mm)</td><td><strong class="selectable">max Leerzone: 325 mm</strong></td></tr>
+				<tr><td>Leuchte 28/54 W (1070 mm)</td><td><strong class="selectable">max Leerzone: 295 mm</strong></td></tr>
+				<tr>
+					<td colspan="2">
+						<div class="subTbl">
+							<table>
+								<tr>
+									<th></th>
+									<th>Länge</th>
+									<th>Leerzone</th>
+									<th>Leuchtmittel</th>
+									<th>Preis netto</th>
+									<th></th>
+								</tr>
+								<tr>
+									<td>Wunschmaß:</td>
+									<td>4.250 mm</td>
+									<td>295 mm</td>
+									<td>8 x 28/54 W</td>
+									<td>1.585,92 Euro</td>
+									<td><a href="">Wählen</a></td>
+								</tr>
+								<tr class="selected">
+									<td>Kleiner:</td>
+									<td>3.960 mm</td>
+									<td>0 mm</td>
+									<td>8 x 28/54 W</td>
+									<td>1.585,92 Euro</td>
+									<td><a href="">Wählen</a></td>
+								</tr>
+								<tr>
+									<td>Größer:</td>
+									<td>4.455 mm</td>
+									<td>0 mm</td>
+									<td>9 x 21/39 W</td>
+									<td>1.725,60 Euro</td>
+									<td><a href="">Wählen</a></td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+				<tr><td>Leuchte 21/39 W (770 mm)</td><td><strong class="selectable selected">max Leerzone: 221 mm</strong></td></tr>
+				<tr><td>Leuchte 14/24 W (495 mm)</td><td><strong class="selectable">max Leerzone: 255 mm</strong></td></tr>
+			</table>
+		</div>
+		
+		<div class="tblHolder">
+			<h4>Schenkel B</h4>
+			<table>
+				<tr><td>Leuchte 35/49 W (1370 mm)</td><td><strong class="selectable">max Leerzone: 325 mm</strong></td></tr>
+				<tr><td>Leuchte 28/54 W (1070 mm)</td><td><strong class="selectable">max Leerzone: 295 mm</strong></td></tr>
+				<tr><td>Leuchte 21/39 W (770 mm)</td><td><strong class="selectable">max Leerzone: 221 mm</strong></td></tr>
+				<tr><td>Leuchte 14/24 W (495 mm)</td><td><strong class="selectable selected">max Leerzone: 255 mm</strong></td></tr>
+			</table>
+		</div>
+
+		<div class="tblHolder">
+			<h4>Schenkel C</h4>
+			<table>
+				<tr><td>Leuchte 35/49 W (1370 mm)</td><td><strong class="selectable">max Leerzone: 325 mm</strong></td></tr>
+				<tr><td>Leuchte 28/54 W (1070 mm)</td><td><strong class="selectable selected">max Leerzone: 295 mm</strong></td></tr>
+				<tr><td>Leuchte 21/39 W (770 mm)</td><td><strong class="selectable">max Leerzone: 221 mm</strong></td></tr>
+				<tr><td>Leuchte 14/24 W (495 mm)</td><td><strong class="selectable">max Leerzone: 255 mm</strong></td></tr>
+			</table>
+		</div>
+			
+	</div>
+<!-- END TEMPLATE 4 -->
+
+
+
+<!-- TEMPLATE 5 -->
+			<div class="cfContentWrapper tempStyle">
+				<h2>Ihre Wunschkonfiguration</h2>
+				<div class="grid">
+					<div class="col-2-3">
+						<h4>IHRE VORAUSWAHL</h4>
+						
+						<div class="tblHolder">
+							<table>
+								<tr><td>Montageart:</td><td>Einbau Randlos</td></tr>
+								<tr><td>System:</td><td>STRONG1</td></tr>
+								<tr><td>Gehäusefarbe:</td><td>Steingrau</td></tr>
+								<tr><td>Leuchtmittel:</td><td>LED</td></tr>
+								<tr><td>Lichtfarbe:</td><td>3000 K</td></tr>
+								<tr><td>Steuerung:</td><td>DIM DALI</td></tr>
+								<tr><td>Bauform:</td><td>U-Form</td></tr>
+								<tr><td>Schenkel A:</td><td>4.250 mm</td></tr>
+								<tr><td>Schenkel B:</td><td>3.255 mm</td></tr>
+								<tr><td>Schenkel C:</td><td>4.220 mm</td></tr>
+							</table>
+						</div>
+
+						<!-- table - total dimensions -->
+						<div class="tblHolder blockFinalDimentions">
+							<table>
+								<tr><th></th><th>Schenkel<br>A</th><th>Schenkel<br>B</th><th>Schenkel<br>C</th></tr>
+								<tr><td>Länge*</td><td>4.250 mm</td><td>3.255 mm</td><td>8.888 mm</td></tr>
+								<tr><td>Leerzone</td><td>0 mm</td><td>89 mm</td><td>210 mm</td></tr>
+								<tr><td>Bestückung</td><td>3 x 28/54W</td><td>2 x 35/49 W</td><td>5 x 21/39 W</td></tr>
+							</table>
+							<div class="cfAnnotate">* Alle Längen inkl. Gehäuse und Endstücken, sofern relevant.</div>
+						</div>
+						<!-- END table - total dimensions -->
+
+						<!-- total price -->
+						<div class="blockTotalPrice">
+							<h2>Gesamtpreis: <span>1585,92 Euro</span></h2>
+							<div class="cfAnnotate">Alle Preise Brutto zzgl. 19% MwSt.</div>
+						</div>
+						<!-- END total price -->
+						
+						<!-- project name -->
+						<div class="blockProjectDetails">
+							<div class="formHolder">
+								<p>Projektname<br><input type="text" name="projectName" placeholder="Eingabefeld"></p>
+								<p>Raum / System Bezeichnung<br><input type="text" name="projectName2" placeholder="Eingabefeld"></p>
+								<button class="cfButton" type="button">PDF Ausgabe</button>
+							</div>
+						</div>
+						<!-- END project name -->
+
+						<div class="tblHolder">
+							<h4>Aufstellung der Systembestandteile:</h4>
+							<table>
+								<tr><td>Leuchtmittel:</td><td>8 x 126-014-020, T16 35/49 W, DALI</td></tr>
+								<tr><td>Gehäuse:</td><td>1 x 126-001-100-2125, Länge: 2.125 mm <br>1 x 126-001-100-2126, Länge: 2.126 mm</td></tr>
+								<tr><td>Abdeckung:</td><td>1 x 126-820-000-2125, Länge: 2.125 mm <br>1 x 126-820-000-2126, Länge: 2.126 mm</td></tr>
+								<tr><td>Linienverbinder:</td><td>1 x 126-806-000</td></tr>
+								<tr><td>Lichtfarbe:</td><td>3000 K</td></tr>
+								<tr><td>Winkelstücke:</td><td>2 x 126-801-100</td></tr>
+								<tr><td>Endstücke:</td><td>1 x 126-809-100</td></tr>
+							</table>
+						</div>
+
+						<p><button class="cfButton" type="button">PDF Ausgabe</button></p>
+
+					</div>
+					<div class="col-1-3">
+						<div class="imgHolder sizeL">
+							<img class="size" src="img/3-Montage-U-Form.png" alt="Thumb 260">
+						</div>
+					</div>
+					
+				</div>
+							
+				
+				
+				
+					
+			</div>
+<!-- END TEMPLATE 5 -->
 
 
 
